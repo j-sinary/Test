@@ -34,7 +34,7 @@ public class ChatRoom {
 	public void init() {
 		running = true;
 		Runnable handler = new Runnable() {
-//			@Override
+		logger.info("Initialization");
 			public void run() {
 				logger.info("Started Message Handler.");
 				while (running) {
