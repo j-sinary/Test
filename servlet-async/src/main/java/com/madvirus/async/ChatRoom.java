@@ -74,7 +74,7 @@ public class ChatRoom {
 			}
 		});
 		try {
-			sendMessageTo(asyncCtx, "Welcome!");
+			sendMessageTo(asyncCtx, "Welcome! ChatRoom");
 			clients.add(asyncCtx);
 		} catch (IOException e) {
 			e.printStackTrace();
