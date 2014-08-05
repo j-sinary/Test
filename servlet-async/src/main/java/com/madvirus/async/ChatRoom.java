@@ -56,23 +56,19 @@ public class ChatRoom {
 
 	public void enter(final AsyncContext asyncCtx) {
 		asyncCtx.addListener(new AsyncListener() {
-//			@Override
 			public void onTimeout(AsyncEvent event) throws IOException {
 				logger.info("onTimeout");
 				clients.remove(asyncCtx);
 			}
 
-//			@Override
 			public void onError(AsyncEvent event) throws IOException {
 				logger.info("onError");
 				clients.remove(asyncCtx);
 			}
 
-//			@Override
 			public void onStartAsync(AsyncEvent event) throws IOException {
 			}
 
-//			@Override
 			public void onComplete(AsyncEvent event) throws IOException {
 				logger.info("onComplete");
 			}
